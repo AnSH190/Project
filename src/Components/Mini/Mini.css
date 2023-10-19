@@ -1,0 +1,762 @@
+body.dark-mode {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+.mains {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+body.dark-mode .tab {
+  background-color: #222; /* Change background color for dark mode */
+  border: 1px solid #555; /* Change border color for dark mode */
+}
+
+body.dark-mode .tab button {
+  color: #f8f8f8;
+  transition: 0s; /* Change button text color for dark mode */
+}
+
+body.dark-mode .tab button.active {
+  background-color: #444; /* Change active tab button background color for dark mode */
+}
+
+.profileee {
+  display: flex;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  border-left: none;
+  height: 100%;
+}
+
+.profile {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.p {
+  display: flex;
+}
+
+.pfp {
+  height: 28px;
+  width: 28px;
+  border-radius: 40%;
+  margin: 10px;
+  mix-blend-mode: multiply;
+  background-color: black;
+  border: 1px solid gray;
+}
+
+#name {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 11px;
+  padding-bottom: 5px;
+}
+
+#name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.log {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  height: 33px;
+  padding-top: 5px;
+  width: 80px;
+  text-align: center;
+  padding-right: 18px;
+  color: rgb(255, 221, 169);
+  margin-block: 6px;
+  margin-inline: 9px;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+.log:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  border-radius: 10px;
+}
+
+.log:active {
+  background-color: #000000;
+}
+.greetting {
+  color: rgb(37, 25, 25);
+  display: flex;
+  text-align: center;
+  width: 100%;
+  padding-inline: 0px;
+  border-bottom: 1px solid black;
+  margin-block: 0px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+
+.greetting h3 {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.greetting .pfp {
+  margin: inherit;
+  padding: inherit;
+  margin-right: 8px;
+}
+
+.greetting span {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pro {
+  width: 100%;
+}
+
+.profile-h {
+  width: 350px;
+  margin-inline: auto;
+}
+
+.h- img {
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: multiply;
+}
+
+.h- h4 {
+  text-align: center;
+  margin-left: 80px;
+}
+
+.h- {
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.profile-h {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerss {
+  padding: 2px 16px;
+}
+
+.payment-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.amount {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0px 0px 20px 10px black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: cornsilk;
+}
+
+.amount h2,
+h3 {
+  text-align: center;
+  color: rgb(255, 217, 140);
+}
+
+.amount button {
+  height: 45px;
+  width: 120px;
+  color: white;
+  font-weight: 900;
+  font-size: 13px;
+  border-radius: 25px;
+  background: rgb(53, 102, 248);
+  text-align: center;
+  transition-duration: 0.7s;
+  margin-inline: auto;
+}
+
+.amount button:hover {
+  background: rgb(41, 255, 255);
+  cursor: pointer;
+}
+
+.payments- {
+  height: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.payment-gate {
+  width: 250px;
+  height: 50px;
+  margin-inline: auto;
+  /* background-color: beige; */
+  background-color: #fff;
+  border-radius: 75px;
+  margin-block: 17px;
+}
+
+.payment-gate:hover {
+  /* background-color: rgb(228, 176, 158); */
+  background-color: rgb(75, 75, 213);
+  cursor: pointer;
+  transform-origin: right;
+  /* transform-origin: left; */
+  transition-duration: 0.5s;
+}
+
+.exam-schedule,
+.past-exam-results,
+.study-resources,
+.exam-registration,
+.exam-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #0000005c;
+  /* background-color: #fff; */
+  background-color: #ffffff63;
+}
+
+/* Style for content within subsections (placeholders) */
+.exam-schedule p,
+.past-exam-results p,
+.study-resources p,
+.exam-registration p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* Example style for buttons within subsections (customize as needed) */
+.exam-schedule button,
+.past-exam-results button,
+.study-resources button,
+.exam-registration button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exam-schedule button:hover,
+.past-exam-results button:hover,
+.study-resources button:hover,
+.exam-registration button:hover {
+  background-color: #0056b3;
+}
+
+.exam-schedule:hover,
+.past-exam-results:hover,
+.study-resources:hover,
+.exam-registration:hover,
+.exam-section:hover {
+  /* background-color: #ffffff63; */
+  background-color: rgba(224, 224, 224, 0.708);
+  cursor: pointer;
+}
+
+.exam-section h3 {
+  padding: 12px 20px;
+  margin: 0;
+  color: #333;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-section h3:hover {
+  background-color: #e0e0e0;
+}
+
+.exam-content {
+  padding: 20px;
+  color: #1c1b1b;
+  font-size: 16px;
+}
+
+.exam-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.exam-content ul li {
+  margin-bottom: 10px;
+}
+
+/* Add a nice box shadow to the section */
+.exam-section:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resou {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resou p {
+  flex: 1; /* Takes up remaining space on the left */
+  margin-right: 10px; /* Add some spacing between the elements */
+}
+
+.exams-cont {
+  padding-top: 25px;
+}
+.results-cont h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aca-cont h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.aca-cont p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.aca-cont ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aca-cont li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.aca-cont .assignments {
+  margin-top: 30px;
+}
+
+.aca-cont .assignment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.aca-cont input[type="checkbox"] {
+  margin-right: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #414441;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.aca-cont input[type="checkbox"]:checked {
+  background-color: #4e504e;
+  border: 2px solid #000000;
+}
+
+.aca-cont label {
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.aca-cont h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.aca-cont .aca-updates {
+  margin-top: 30px;
+}
+
+.classwork-updates {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.classwork-updates li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.classwork-updates li:before {
+  content: "\2022"; /* Bullet point */
+  color: #ffffff63;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.checkbox-wrapper-33 {
+  --s-xsmall: 0.625em;
+  --s-small: 1.2em;
+  --border-width: 1px;
+  --c-primary: #000000;
+  --c-primary-20-percent-opacity: rgba(0, 0, 0, 0.2);
+  --c-primary-10-percent-opacity: rgba(249, 245, 255, 0.1);
+  --t-base: 0.4s;
+  --t-fast: 0.2s;
+  --e-in: ease-in;
+  --e-out: cubic-bezier(0.11, 0.29, 0.18, 0.98);
+}
+
+.checkbox-wrapper-33 .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.checkbox-wrapper-33 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.checkbox-wrapper-33 .checkbox + .checkbox {
+  margin-top: var(--s-small);
+}
+
+.checkbox-wrapper-33 .checkbox__symbol {
+  display: inline-block;
+  display: flex;
+  margin-right: calc(var(--s-small) * 0.7);
+  border: var(--border-width) solid var(--c-primary);
+  position: relative;
+  border-radius: 0.1em;
+  width: 0.9em;
+  height: 0.9em;
+  transition: box-shadow var(--t-base) var(--e-out),
+    background-color var(--t-base);
+  box-shadow: 0 0 0 0 var(--c-primary-10-percent-opacity);
+}
+
+.checkbox-wrapper-33 .checkbox__symbol:after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 0.25em;
+  height: 0.25em;
+  background-color: var(--c-primary-20-percent-opacity);
+  opacity: 0;
+  border-radius: 3em;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+}
+
+.checkbox-wrapper-33 .checkbox .icon-checkbox {
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  fill: none;
+  stroke-width: 3;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  color: var(--c-primary);
+  display: inline-block;
+}
+
+.checkbox-wrapper-33 .checkbox .icon-checkbox path {
+  transition: stroke-dashoffset var(--t-fast) var(--e-in);
+  stroke-dasharray: 30px, 31px;
+  stroke-dashoffset: 31px;
+}
+
+.checkbox-wrapper-33 .checkbox__textwrapper {
+  margin: 0;
+}
+
+.checkbox-wrapper-33 .checkbox__trigger:checked + .checkbox__symbol:after {
+  -webkit-animation: ripple-33 1.5s var(--e-out);
+  animation: ripple-33 1.5s var(--e-out);
+}
+
+.checkbox-wrapper-33
+  .checkbox__trigger:checked
+  + .checkbox__symbol
+  .icon-checkbox
+  path {
+  transition: stroke-dashoffset var(--t-base) var(--e-out);
+  stroke-dashoffset: 0px;
+}
+
+.checkbox-wrapper-33 .checkbox__trigger:focus + .checkbox__symbol {
+  box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
+}
+
+@-webkit-keyframes ripple-33 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(20);
+  }
+}
+
+@keyframes ripple-33 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(20);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+table th {
+  background-color: #ffffff63;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #ffffff63;
+}
+
+table tbody tr:hover {
+  background-color: rgba(224, 224, 224, 0.708);
+  cursor: pointer;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  margin-block: 10px;
+  overflow: hidden;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card2 img {
+  width: 100%;
+  height: inherit;
+}
+
+.column h3 {
+  text-align: center;
+}
+
+.column:hover {
+  box-shadow: 0px 0px 20px 10px black;
+}
+
+@media screen and (max-width: 800px) {
+  .tab {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .greetting span {
+    display: block;
+    justify-content: start;
+    margin-left: 8px;
+  }
+
+  .profileee {
+    flex-direction: column;
+  }
+
+  .payment-cont {
+    flex-direction: column;
+  }
+
+  .amount {
+    margin-top: 2rem;
+    box-shadow: none;
+  }
+
+  .amount,
+  .payments- {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+*.dark-mode {
+  background-color: #333;
+  color: #f8f8f8;
+}
